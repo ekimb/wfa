@@ -310,7 +310,9 @@ pub fn wf_align(
     let hi: i32 = 0;
     let lo: i32 = 0;
 
-    eprintln!("\t a_k {a_k} a_offset {a_offset} hi {hi} lo {lo}");
+    if config.verbosity > 1 {
+        eprintln!("\t a_k {a_k} a_offset {a_offset} hi {hi} lo {lo}");
+    }
 
     // Initial conditions
     let wf_set = types::WaveFrontSet {
