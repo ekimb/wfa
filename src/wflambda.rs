@@ -250,7 +250,7 @@ fn wf_extend<F>(
         let mut v = utils::compute_v(m_s_k, k);
         let mut h = utils::compute_h(m_s_k, k);
 
-        eprintln!("\t\t\tk {}\toffset {}\t({}, {})", k, m_s_k, v, h);
+        //eprintln!("\t\t\tk {}\toffset {}\t({}, {})", k, m_s_k, v, h);
 
         // eprintln!("\t\t\tk {}\toffset {}\t({}, {})", k, m_s_k, v, h);
         // vt[v][h] = m_wavefront.vals[k_index] as i32;

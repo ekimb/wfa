@@ -571,10 +571,10 @@ pub fn wf_next(
                 _ => {}
             };
 
-            eprintln!();
+            //eprintln!();
         }
     }
-    eprintln!();
+    //eprintln!();
 
 }
 
