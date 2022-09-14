@@ -246,7 +246,7 @@ fn wf_extend(
         let mut v = utils::compute_v(m_s_k, k);
         let mut h = utils::compute_h(m_s_k, k);
 
-        eprintln!("\t\t\tk {}\toffset {}\t({}, {})", k, m_s_k, v, h);
+        //eprintln!("\t\t\tk {}\toffset {}\t({}, {})", k, m_s_k, v, h);
         // vt[v][h] = m_wavefront.vals[k_index] as i32;
 
         let is_match = |v: i32, h: i32| -> bool {
@@ -256,7 +256,7 @@ fn wf_extend(
             let v = v as usize;
             let h = h as usize;
 
-            eprintln!("\t\t\t {} {}", text[h] as char, query[v] as char);
+            //eprintln!("\t\t\t {} {}", text[h] as char, query[v] as char);
             text[h] == query[v]
         };
 
@@ -279,7 +279,7 @@ fn wf_extend(
                     .expect("DEBUG [wfa::wf_extend] fail unwrap k={k}");
                 match_positions.push((v, h, offset as usize));
 
-                eprintln!("\t\tk {}\toffset {}", k, offset);
+                //eprintln!("\t\tk {}\toffset {}", k, offset);
             }
 
             v += 1;
